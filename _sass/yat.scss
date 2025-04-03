@@ -69,10 +69,10 @@ $on-laptop:        800px !default;
 // Deprecation Warning: Using / for division outside of calc() is deprecated
 // and will be removed in Dart Sass 2.0.0."
 @function divide($dividend, $divisor: 1) {
-  @if function-exists(div) {
+  @if meta.function-exists('div', 'math') {
     @return math.div($dividend, $divisor);
   } @else {
-    @return calc($dividend / $divisor);
+    @return ($dividend / $divisor);
   }
 }
 
