@@ -243,7 +243,7 @@ theme_color: snowwhite
 markdown: kramdown
 kramdown:
   input: GFM
-
+theme: jekyll-theme-yat
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
