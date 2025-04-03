@@ -5,8 +5,8 @@ source "https://rubygems.org"
 # 使用 GitHub Pages
 gem "github-pages", group: :jekyll_plugins
 
-# 添加主题
-gem "jekyll-theme-yat"
+# 添加主题 - 指定版本号以确保兼容性
+gem "jekyll-theme-yat", "~> 1.10"
 
 # 添加必要的插件
 group :jekyll_plugins do
